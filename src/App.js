@@ -1,19 +1,23 @@
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Create from "./Create";
-import Read from "./Read";
-import Update from "./Update";
+import Home from "./Components/Home";
+import { Route, Routes } from 'react-router-dom';
+import './App.css';
+import Sidenav from "./Components/Sidenav";
+import BookList from "./Components/BookList";
+import AddBook from "./Components/AddBook";
+import EditBook from "./Components/EditBook";
 
 function App() {
   return (
-    <div className="container">
-      <BrowserRouter>
-        <Routes>
-          <Route exact path="/" element={<Create />}></Route>
-          <Route path="/read" element={<Read />}></Route>
-          <Route path="/update" element={<Update />}></Route>
-        </Routes>
-      </BrowserRouter>
+    <div className="App">
+      <Sidenav />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        {/* <Route path='/about' element={<About />} /> */}
+        <Route path='/books' element={<BookList />} />
+        <Route path='/addbook' element={<AddBook />} />
+        <Route path='/books/edit/:id' element={<EditBook />} />
+      </Routes>
     </div>
   );
 }

@@ -1,63 +1,62 @@
-.welcome {
+.sideLib {
   text-align: center;
 }
 
-.trow{
-  display: flex;
-  justify-content: center;
-}
-.teachTable{
-  border: 1px solid black;
-  padding: 10px;
-  border-collapse: collapse;
-}
-.tab{
+
+.libImage{
+  object-fit: cover;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  margin-left: 300px;
+  margin-top: -40px;
+  height: auto;
+  width: 900px;
 }
-.top{
-  margin-left:200px;
-  margin-bottom: -35px;
-}
-.topbtn{
-  margin-left: 940px;
-  margin-bottom: -30px;
-}
-Table{
-  margin: 30px;
-  border: none;
-  /* margin-right: 50px; */
-}
-.tableH{
-  /* display: flex; */
-  /* justify-content: space-around; */
-  margin-top: 20px;
-}
-.details{
-  margin-left: 50px;
-  margin-bottom: -30px;
-}
-.add-Stud{
-  margin-left: 990px;
-  margin-bottom: -30px;
-}
-.edit-student,
-.edit-user{
+.lib{
+  overflow: hidden;
   display: flex;
-  flex-direction: column;
-  margin-top: 30px;
+  justify-content: center;
+  align-items: center;
   margin-left: 250px;
-  width: 700px;
   padding: 30px;
+  margin-top: -60px;
+}
+.tab{
+  margin-left: 250px;
+  padding: 30px;
+}
+table,th,td{
+  border: 1px solid black;
+  padding: 10px;
+  border-collapse: collapse;
+  text-align: center;
+}
+.bookh{
+  margin-left: 280px;
+  margin-top: -50px;
+  margin-bottom: -20px;
+}
+.abt{
+  margin-top: 50px;
+  margin-left: 250px;
+  padding: 30px;
+  /* text-align: center; */
 }
 .add-user{
   display: flex;
   flex-direction: column;
   margin-top: 30px;
-  margin-left: 250px;
+  margin-left: 380px;
   width: 700px;
   padding: 30px;
   gap: 10px;
+}
+.edit-user{
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-left: 380px;
+  width: 700px;
+  padding: 30px;
 }
